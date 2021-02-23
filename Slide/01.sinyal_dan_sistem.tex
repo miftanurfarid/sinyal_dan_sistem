@@ -1,0 +1,69 @@
+\pdfminorversion=4
+\documentclass[aspectratio=169]{beamer}
+\usepackage{animate} % for animation
+\usepackage{array,multirow,graphicx}
+\usepackage{multicol}
+\usepackage{etoolbox}
+%\graphicspath{{/media/bagustris/atmaja/s3/zemi/bagus-zemi/2018-05-04/}
+%               {/media/bagustris/atmaja/s3/zemi/bagus-zemi/2018-09-20/}}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{section in toc}[sections numbered]
+
+% Hide subsubsections from TOC, but keep PDF bookmarks with beamer
+\hypersetup{bookmarksopen=true,bookmarksopenlevel=4}
+\setcounter{tocdepth}{4}
+
+\renewcommand{\figurename}{Gambar.}
+\renewcommand{\tablename}{Tabel.}
+
+\usetheme[pageofpages=of,	% String used between the current page and the
+							% total page count.
+			alternativetitlepage=true,% Use the fancy title page.
+			titleline=true,
+			titlepagelogo=OK-LOGO-ITK.jpg
+%          	 titlepagelogo=fig/jaist_logo.png
+			]{Torino}
+			% change /beamerinnerthemefancy.sty to resize the logo
+\usecolortheme{freewilly}
+
+\makeatletter
+\patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0em}{}{}
+\makeatother
+
+\author{Mifta Nur Farid \\
+	miftanurfarid@lecturer.itk.ac.id}
+\title{Sinyal dan Sistem}
+\subtitle{Pengantar Sinyal \& Sistem}
+\institute{Teknik Elektro \\ Institut Teknologi Kalimantan \\ Balikpapan, Indonesia}
+\date{\tiny Februari 26, 2020}
+
+% The log drawn in the upper right corner.
+\logo{\includegraphics[height=0.13\paperheight]{OK-LOGO-ITK.jpg}}
+
+\begin{document}
+
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+
+\begin{frame}{Bahan Kajian}
+%	\begin{multicols}{2} % Two columns for outline
+    \tableofcontents[subsectionstyle=hide]
+%	\end{multicols}
+\end{frame}
+
+\section{Sinyal Waktu Diskrit dan Waktu Kontinu}
+
+\begin{frame}{Sinyal Waktu Diskrit dan Waktu Kontinu}
+	\begin{itemize}
+		\item Sinyal direpresentasikan secara matematis sebagai fungsi dari satu atau lebih variabel
+	\end{itemize}
+	
+	\begin{figure}
+		
+		\caption{}
+	\end{figure}
+\end{frame}
+
+\end{document}
+

@@ -1,0 +1,87 @@
+\pdfminorversion=4
+\documentclass[aspectratio=169]{beamer}
+\usepackage{animate} % for animation
+\usepackage{array,multirow,graphicx}
+\usepackage{multicol}
+\usepackage{etoolbox}
+%\graphicspath{{/media/bagustris/atmaja/s3/zemi/bagus-zemi/2018-05-04/}
+%               {/media/bagustris/atmaja/s3/zemi/bagus-zemi/2018-09-20/}}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{section in toc}[sections numbered]
+
+% Hide subsubsections from TOC, but keep PDF bookmarks with beamer
+\hypersetup{bookmarksopen=true,bookmarksopenlevel=4}
+\setcounter{tocdepth}{4}
+
+\renewcommand{\figurename}{Gambar.}
+\renewcommand{\tablename}{Tabel.}
+
+\usetheme[pageofpages=of,	% String used between the current page and the
+							% total page count.
+			alternativetitlepage=true,% Use the fancy title page.
+			titleline=true,
+			titlepagelogo=OK-LOGO-ITK.jpg
+%          	 titlepagelogo=fig/jaist_logo.png
+			]{Torino}
+			% change /beamerinnerthemefancy.sty to resize the logo
+\usecolortheme{freewilly}
+
+\makeatletter
+\patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip0em}{}{}
+\makeatother
+
+\author{Mifta Nur Farid \\
+	miftanurfarid@lecturer.itk.ac.id}
+\title{Sinyal dan Sistem}
+\subtitle{Sistem Linear Time-Invariant}
+\institute{Teknik Elektro \\ Institut Teknologi Kalimantan \\ Balikpapan, Indonesia}
+\date{\tiny November 24, 2020}
+
+% The log drawn in the upper right corner.
+\logo{\includegraphics[height=0.13\paperheight]{OK-LOGO-ITK.jpg}}
+
+\begin{document}
+
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+
+\begin{frame}{Bahan Kajian}
+%	\begin{multicols}{2} % Two columns for outline
+    \tableofcontents[subsectionstyle=hide]
+%	\end{multicols}
+\end{frame}
+
+\section{Bahan Kajian 1}
+\begin{frame}{Judul Frame 1}
+	\begin{itemize}
+		\item Item 1
+		\item Item 2
+	\end{itemize}
+\end{frame}
+
+\subsection{Sub Bahan Kajian 1}
+\begin{frame}{Judul Frame 2}
+	\begin{itemize}
+		\item Item 1
+		\item Item 2
+	\end{itemize}
+\end{frame}
+
+\subsection{Sub Bahan Kajian 2}
+\begin{frame}{Judul Frame 2}
+	\begin{itemize}
+		\item Item 1
+		\item Item 2
+	\end{itemize}
+\end{frame}
+
+\section{Bahan Kajian 2}
+\begin{frame}{Judul Frame 3}
+	\begin{enumerate}
+		\item Item 1
+		\item Item 2
+	\end{enumerate}
+\end{frame}
+\end{document}
+
