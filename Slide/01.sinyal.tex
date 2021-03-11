@@ -51,36 +51,60 @@
 %	\end{multicols}
 \end{frame}
 
-\section{Bahan Kajian 1}
-\begin{frame}{Judul Frame 1}
+\section{Sinyal sinusoidal}
+\begin{frame}{Sinyal sinusoidal waktu kontinu}
 	\begin{itemize}
-		\item Item 1
-		\item Item 2
+		\item $ x(t) = A \cos(\omega_0 t + \phi) $
+		\item $ A $ adalah amplitudo, $ \omega_0 $ adalah frekuensi dan $ \phi $ adalah fasa.
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[height=0.6\textheight]{gambar/01.sinyal_sinusoidal_waktu_kontinu}
+		\caption{grafik sinyal sinusoidal waktu kontinu} \label{sinusoidal}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Periodik}
+	\begin{itemize}
+		\item Sinyal sinusoidal bersifat periodik
+	\end{itemize}
+	\begin{align*}
+		x(t) &= x(t+T_0) \qquad \text{ periode } \triangleq \text{ nilai terkecil dari } T_0 \\
+		A \cos[\omega_0 t + \phi] &= A \cos[\omega_0 t + \omega_0 T_0 + \phi] \\
+		\\
+		\omega_0 T_0 &= 2 \pi \text{m} \text{;   dimana m adalah bilangan bulat}\\ 
+		T_0 &= \frac{2 \pi \text{m}}{\omega_0} \implies \text{ periode } = \frac{2 \pi}{\omega_0} \\
+	\end{align*}
+	\begin{itemize}
+		\item Jika kita perhatikan kembali gambar sebelumnya (Gambar \ref{sinusoidal}), maka pada periode $ \frac{2 \pi}{\omega_0} $ memiliki amplitudonya adalah sama
 	\end{itemize}
 \end{frame}
 
-\subsection{Sub Bahan Kajian 1}
-\begin{frame}{Judul Frame 2}
+\begin{frame}{\textit{Time-shift}}
 	\begin{itemize}
-		\item Item 1
-		\item Item 2
+		\item \textit{Time-shift} dalam sinyal sinusoidal $ \iff $ perubahan fasa
+	\end{itemize}
+
+	\begin{align*}
+		A \cos [\omega_0 (t + t_0) ] &= A \cos [\omega_0 t + \omega_0 t_0 ] \\
+	\end{align*}
+\end{frame}
+
+\begin{frame}{Genap (\textit{even})}
+	\begin{itemize}
+		\item Sinyal dikatakan bersifat genap (\textit{even}) jika dicerminkan pada titik nol memliki bentuk sinyal yang sama
+		\item $ \phi = 0 \implies x(t) = A \cos(\omega_0 t) $	
+	\end{itemize}
+	\begin{figure}
+		\centering
+		\includegraphics[height=0.4\textheight]{gambar/01.sinyal_genap}
+		\caption{Sifat genap dari sinyal sinusoidal}
+	\end{figure}
+	\begin{itemize}
+		\item Periodik : $ x(t) = x(t + T_0) $
+		\item Genap : $ x(t) = x(-t) $
 	\end{itemize}
 \end{frame}
 
-\subsection{Sub Bahan Kajian 2}
-\begin{frame}{Judul Frame 2}
-	\begin{itemize}
-		\item Item 1
-		\item Item 2
-	\end{itemize}
-\end{frame}
-
-\section{Bahan Kajian 2}
-\begin{frame}{Judul Frame 3}
-	\begin{enumerate}
-		\item Item 1
-		\item Item 2
-	\end{enumerate}
-\end{frame}
 \end{document}
 
