@@ -1,3 +1,10 @@
 Buku/*.pdf
 Nilai
 *.~*
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
