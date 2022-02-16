@@ -150,7 +150,7 @@
 		\end{center}
 		
 		\item Kedua persamaan di atas bisa saja tidak konvergen.
-		\item Jika $ x(t) $ dan $ x[n] $ sama dengan konstanta bukan nol di semua $ t $, maka sinyal tersebut memiliki energi yang tak hingga.
+		\item Jika $ x(t) $ dan $ x[n] $ sama dengan konstanta bukan nol di semua $ t $, maka sinyal tersebut memiliki energi yang tak hingga. Sedangkan sinyal dengan $ E_{\infty} < \infty $ memiliki energi berhingga.
 	\end{itemize}
 \end{frame}
 
@@ -165,13 +165,127 @@
 	\end{itemize}
 \end{frame}
 
-\section{Sinyal Eksponensial dan Sinyal Sinusoidal}
+\begin{frame}{Daya dan Energi Sinyal}
+	Berdasarkan persamaan-persamaan tadi, dapat disimpulkan bahwa terdapat 3 jenis sinyal:
+	\begin{enumerate}
+		\item Sinyal dengan total energi berhingga $ E_{\infty} < \infty $. Sinyal ini memiliki daya rata-rata yang bernilai nol
+		\begin{center}
+			\includegraphics[width=0.3\linewidth]{img/img17}
+		\end{center}
+		Contoh sinyal dengan total energi berhingga yang bernilai 1 untuk $ 0 \leq t \leq 1 $ dan bernilai 0 di lainnya. Pada kasus ini, $ E_{\infty} = 1 $ dan $ P_{\infty} = 0 $
+		\item Sinyal dengan daya rata-rata berhingga. Jika $ P_{\infty} > 0 $, maka $ E_{\infty} = \infty $.
+		\item Sinyal yang baik $ P_{\infty} $ maupun $ E_{\infty} $ nya tidak berhingga.
+	\end{enumerate}
+\end{frame}
 
-\section{Fungsi Unit Impulse dan Fungsi Unit Step}
+\section{Transformasi Variabel Bebas}
 
-\section{Sistem Waktu Kontinyu dan Sistem Waktu Diskrit}
+\begin{frame}
+	\frametitle{Transformasi variabel bebas}
+	\begin{itemize}
+		\item Time-shift
+		\begin{center}
+			\includegraphics[width=0.8\linewidth]{img/img18}
+		\end{center}
+	\end{itemize}
+\end{frame}
 
-\section{Sifat-Sifat Dasar Sistem}
+\begin{frame}{Transformasi variabel bebas}
+	\begin{itemize}
+		\item Time-shift
+		\begin{center}
+			\includegraphics[width=0.4\linewidth]{img/img19}
+		\end{center}
+	\end{itemize}
+\end{frame}
 
+\begin{frame}{Transformasi variabel bebas}
+	\begin{itemize}
+		\item Time-reversal
+		\begin{center}
+			\includegraphics[width=0.4\linewidth]{img/img20}
+		\end{center}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Transformasi variabel bebas}
+	\begin{itemize}
+		\item Time-reversal
+		\begin{center}
+			\includegraphics[width=0.5\linewidth]{img/img21}
+		\end{center}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Transformasi variabel bebas}
+	\begin{itemize}
+		\item Scaling
+		\begin{center}
+			\includegraphics[width=0.4\linewidth]{img/img22}
+		\end{center}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Contoh transformasi variabel bebas}
+	\begin{itemize}
+		\item Scaling
+		\begin{center}
+			\includegraphics[width=0.7\linewidth]{img/img23}
+		\end{center}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Contoh transformasi variabel bebas}
+	\begin{itemize}
+		\item Scaling
+		\begin{center}
+			\includegraphics[width=0.7\linewidth]{img/img24}
+		\end{center}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Contoh transformasi variabel bebas}
+	\begin{itemize}
+		\item Scaling
+		\begin{center}
+			\includegraphics[width=0.7\linewidth]{img/img25}
+		\end{center}
+	\end{itemize}
+\end{frame}
+
+\section{Sinyal Periodik}
+
+\begin{frame}
+	\frametitle{Sinyal Periodik}
+	\begin{itemize}
+		\item Sinyal periodik waktu kontinyu $ x(t) = x(t + T) $
+		\begin{center}
+			\includegraphics[width=\linewidth]{img/img26}
+		\end{center}
+		\item Sifatnya tidak berubah dengan time-shift sebesar $ T $
+		\item Jika $ x(t) $ adalah periodik dengan periode $ T $, maka $ x(t) = x(t + mT) $
+		\item $ T_0 $ adalah periode dasar, yaitu nilai positif terkecil dari T
+		\item Sinyal $ x(t) $ yang tidak periodik disebut sinyal aperiodik
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Sinyal Periodik}
+	\begin{itemize}
+		\item Sinyal periodik waktu diskrit $ x[n] = x[n + N] $
+		\item Sifatnya tidak berubah dengan time-shift sebesar $ N $
+		\item Jika $ x[n] $ adalah periodik dengan periode $ N $, maka $ x[n] = x[n+mN] $
+		\item $ N_0 $ adalah periode dasar, yaitu nilai positif terkecil dari N
+		\begin{center}
+			\includegraphics[width=\linewidth]{img/img27}
+		\end{center}
+	\end{itemize}
+\end{frame}
+
+\section{Sinyal Genap dan Sinyal Ganjil}
+
+\begin{frame}
+	\frametitle{Sinyal genap dan sinyal ganjil}
+\end{frame}
 
 \end{document}
