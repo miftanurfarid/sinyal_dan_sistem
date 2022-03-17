@@ -1,0 +1,464 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language bahasa
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 0.5cm
+\headsep 0.5cm
+\footskip 0.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tugas 1 - Mata Kuliah Sinyal dan Sistem
+\end_layout
+
+\begin_layout Date
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\series bold
+Catatan
+\end_layout
+
+\begin_layout Itemize
+Jawaban ditulis tangan kemudian di-
+\emph on
+scan
+\emph default
+ atau difoto.
+\end_layout
+
+\begin_layout Itemize
+File di-upload dalam format PDF.
+\end_layout
+
+\begin_layout Itemize
+Jawaban dikumpulkan sebelum tanggal 22 Maret 2022, pukul 13:00 WITA.
+\end_layout
+
+\begin_layout Section
+
+\series bold
+Soal
+\end_layout
+
+\begin_layout Enumerate
+Diketahui suatu sinyal waktu kontinyu 
+\begin_inset Formula $x(t)$
+\end_inset
+
+ yang ditunjukkan oleh Gambar 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img01"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/img01.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sinyal waktu kontinyu 
+\begin_inset Formula $x(t)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img01"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Gambarkan bentuk-bentuk sinyal berikut ini:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x(t-2)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x(2t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x(\frac{t}{2})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x(-t)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Diketahui suatu sinyal waktu diskrit 
+\begin_inset Formula $x[n]$
+\end_inset
+
+ yang ditunjukkan oleh Gambar 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img02"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/img02.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sinyal waktu diskrit 
+\begin_inset Formula $x[n]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img02"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Gambarkan bentuk-bentuk sinyal berikut
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x[n-2]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x[2n]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x[-n]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x[-n+2]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Gambarkan sinyal ganjil dan sinyal genap dari sinyal-sinyal berikut ini.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/img03.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/img04.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/img05.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Graphics
+	filename img/img06.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Diketahui sinyal sinusoidal waktu kontinyu
+\begin_inset Formula 
+\[
+x(t)=2\cos(3t+2)
+\]
+
+\end_inset
+
+Apakah sinyal 
+\begin_inset Formula $x(t)$
+\end_inset
+
+ adalah periodik? Buktikan!
+\end_layout
+
+\begin_layout Enumerate
+Diketahui sinyal eksponensial kompleks waktu diskrit
+\begin_inset Formula 
+\[
+x[n]=e^{j2n}
+\]
+
+\end_inset
+
+Apakah sinyal 
+\begin_inset Formula $x[n]$
+\end_inset
+
+ adalah periodik? Buktikan!
+\end_layout
+
+\begin_layout Enumerate
+Diketahui suatu sinyal seperti yang ditunjukkan oleh Gambar 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "img03"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/img04.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sinyal eksponensial riil waktu kontinyu 
+\begin_inset Formula $x(t)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "img03"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Gambarkan sinyal 
+\begin_inset Formula $x(t-2)$
+\end_inset
+
+!
+\end_layout
+
+\end_body
+\end_document
