@@ -10,3 +10,5 @@ Nilai
 *.toc
 Slide_MIT
 
+*.lyx#
+*.lyx~
