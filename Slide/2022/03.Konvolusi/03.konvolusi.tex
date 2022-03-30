@@ -104,7 +104,7 @@
 \begin{frame}
 	\frametitle{Representasi Sistem Linear}
 	\begin{itemize}
-		\item Hasil dekomposisi dari input sequence berupa representasi dalan kombinasi linear:
+		\item Hasil dekomposisi dari input sequence berupa representasi dalam kombinasi linear:
 		\begin{equation*}
 		x[n] = \sum\limits_{k = -\infty}^{+\infty} x[k]\delta[n-k]
 		\end{equation*}
@@ -157,12 +157,147 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Dekomposisi menjadi delayed rectangular pulses}
-	Dekomposisi sinyal c-t menjadi kombinasi linier dari weighted, delayed rectangular pulses
+	\frametitle{Dekomposisi menjadi delayed\\rectangular pulses}
+	\begin{multicols}{2}
+		\begin{center}
+			\includegraphics[height=0.9\textheight]{img/img03}
+		\end{center}
+		\columnbreak
+		\vfill\null
+		Dekomposisi sinyal c-t menjadi kombinasi linier dari weighted, delayed rectangular pulses
+		\begin{center}
+			\includegraphics[width=0.9\linewidth]{img/img04}
+		\end{center}
+	\end{multicols}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Representasi Sistem Linear}
+	\begin{itemize}
+		\item Hasil dekomposisi dari c-t input berupa representasi dalam kombinasi linear:
+		\begin{equation*}
+		x(t) = \lim\limits_{\Delta \rightarrow 0}\sum\limits_{k = -\infty}^{+\infty} x(k\Delta)\delta_{\Delta}(t-k\Delta)\Delta
+		\end{equation*}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Representasi Sistem Linear}
+	\begin{itemize}
+		\item Pada sistem linear, response terhadap kombinasi linear adalah kombinasi linear dari response, maka response terhadap input $ x(t) $ adalah
+		\begin{align*}
+		y(t) &= \lim\limits_{\Delta \rightarrow 0}\sum\limits_{k = -\infty}^{+\infty} x(k\Delta)h_{k\Delta}(t)\Delta \\
+		&= \int\limits_{-\infty}^{+\infty}x(\tau)h_{\tau}(t)d\tau
+		\end{align*}
+		\item[] $ y(t) $ adalah output dari input $ x(t) $
+		\item[] $ h_{k\Delta}(t) $ adalah output dari delayed impulse $ \delta_{\Delta}(t-k\Delta) $
+		\item[] $ x[k] $ dan $ \Delta $ adalah scale factor
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Representasi Sistem Time Invariant}
+	\begin{itemize}
+		\item Jika sistemnya adalah time invariant maka response terhadap impulse saat waktu $ t $, adalah sama dengan response terhadap rectangular pulse saat waktu 0, digeser sebesar waktu $ k\Delta $, dengan kata lain
+		\begin{align*}
+			h_{k\Delta}(t) &= h_0(t - k\Delta) \\
+			h_{\tau}(t) &= h_0(t - \tau)
+		\end{align*}
+		\item Agar lebih sederhana: $ h_0(\tau) = h(\tau) \rightarrow h_0(t - \tau) = h(t - \tau) $
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Representasi Sistem Linear Time Invariant}
+	\begin{itemize}
+		\item Sehingga representasi dari sistem linear time invariant (LTI) adalah
+		\begin{equation*}
+		y(t) = \int\limits_{-\infty}^{+\infty} x(\tau)h(t-\tau)d\tau
+		\end{equation*}
+		\item Representasi LTI di atas disebut juga \textbf{Convolution Integral} atau konvolusi integral.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
 	\begin{center}
-		\includegraphics[width=0.7\linewidth]{img/img01}
+		\includegraphics[height=0.8\textheight]{img/img05}
 	\end{center}
 \end{frame}
+
+\begin{frame}
+	\frametitle{Konvolusi}
+	\begin{itemize}
+		\item Konvolusi Penjumlahan (Convolution Sum):
+		\begin{center}
+			\includegraphics[width=0.6\linewidth]{img/img06}
+		\end{center}
+		\item Konvolusi Integral (Convolution Integral):
+		\begin{center}
+			\includegraphics[width=0.6\linewidth]{img/img07}
+		\end{center}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Konvolusi}
+	Bagaimana konvolusi itu sendiri?
+\end{frame}
+
+\begin{frame}
+	\frametitle{Konvolusi Penjumlahan}
+	Diketahui
+	\begin{align*}
+		y[n] &= \sum_{k=-\infty}^{+\infty} x[k] h[n-k] \\
+	\end{align*}
+	dimana
+	\begin{align*}
+		x[n] &= u[n] \\
+		h[n] &= \alpha^n u[n]
+	\end{align*}
+\end{frame}
+
+\begin{frame}{Konvolusi Penjumlahan}
+	\begin{align*}
+	x[n] &= u[n] \\
+	\end{align*}
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{img/img09}
+	\end{center}
+	\begin{align*}
+		h[n] &= \alpha^n u[n]
+	\end{align*}
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{img/img10}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Konvolusi Penjumlahan}
+	Berdasarkan
+	\begin{align*}
+		y[n] &= \sum_{k=-\infty}^{+\infty} x[k] h[n-k] \\
+	\end{align*}
+	yang kita butuhkan adalah $ x[k] $ bukan $ x[n] $ dan $ h[n-k] $ bukan $ h[n] $
+\end{frame}
+
+\begin{frame}{Konvolusi Penjumlahan}
+	Berdasarkan
+	\begin{align*}
+	y[n] &= \sum_{k=-\infty}^{+\infty} x[k] h[n-k] \\
+	\end{align*}
+	yang kita butuhkan adalah $ x[k] $ bukan $ x[n] $ dan $ h[n-k] $ bukan $ h[n] $
+\end{frame}
+
+\begin{frame}{Konvolusi Penjumlahan}
+	Kita dapatkan:\\
+	\begin{itemize}
+		\item $ x[n] \rightarrow x[k] $
+		\item $ h[n] \rightarrow h[k] \rightarrow h[-k] \rightarrow h[-k+n] \rightarrow h[n-k]$
+	\end{itemize}
+	23:38
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{img/img11}
+	\end{center}
+	
+\end{frame}
+	
+% TUGAS
 
 \section{Tugas Mandiri dan Terstruktur}
 
