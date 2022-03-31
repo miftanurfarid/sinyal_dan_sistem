@@ -244,7 +244,7 @@
 	\frametitle{Konvolusi Penjumlahan}
 	Diketahui
 	\begin{align*}
-		y[n] &= \sum_{k=-\infty}^{+\infty} x[k] h[n-k] \\
+		y[n] &= \sum_{k=-\infty}^{+\infty} x[k] h[n-k]
 	\end{align*}
 	dimana
 	\begin{align*}
@@ -271,15 +271,7 @@
 \begin{frame}{Konvolusi Penjumlahan}
 	Berdasarkan
 	\begin{align*}
-		y[n] &= \sum_{k=-\infty}^{+\infty} x[k] h[n-k] \\
-	\end{align*}
-	yang kita butuhkan adalah $ x[k] $ bukan $ x[n] $ dan $ h[n-k] $ bukan $ h[n] $
-\end{frame}
-
-\begin{frame}{Konvolusi Penjumlahan}
-	Berdasarkan
-	\begin{align*}
-	y[n] &= \sum_{k=-\infty}^{+\infty} x[k] h[n-k] \\
+		y[n] &= \sum_{k=-\infty}^{+\infty} x[k] h[n-k]
 	\end{align*}
 	yang kita butuhkan adalah $ x[k] $ bukan $ x[n] $ dan $ h[n-k] $ bukan $ h[n] $
 \end{frame}
@@ -290,13 +282,71 @@
 		\item $ x[n] \rightarrow x[k] $
 		\item $ h[n] \rightarrow h[k] \rightarrow h[-k] \rightarrow h[-k+n] \rightarrow h[n-k]$
 	\end{itemize}
-	23:38
+
 	\begin{center}
 		\includegraphics[width=0.8\linewidth]{img/img11}
 	\end{center}
 	
 \end{frame}
+
+\begin{frame}{Konvolusi Penjumlahan}
+	\textbf{Play convolution sum animation}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Konvolusi Integral}
+	Diketahui
+	\begin{align*}
+		y(t) &= \int_{-\infty}^{+\infty} x(\tau) h(t-\tau)
+	\end{align*}
+	dimana
+	\begin{align*}
+		x(t) &= u(t) \\
+		h(t) &= e^{-at} u(t)
+	\end{align*}
+\end{frame}
+
+\begin{frame}{Konvolusi Integral}
+	\begin{align*}
+		x(t) &= u(t) \\
+	\end{align*}
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{img/img12}
+	\end{center}
+	\begin{align*}
+		h(t) &= e^{-at} u(t)
+	\end{align*}
+	\begin{center}
+		\includegraphics[width=0.5\linewidth]{img/img13}
+	\end{center}
+\end{frame}
+
+\begin{frame}{Konvolusi Integral}
+	Berdasarkan
+	\begin{align*}
+		y(t) &= \int_{-\infty}^{+\infty} x(\tau) h(t-\tau)
+	\end{align*}
+	yang kita butuhkan adalah $ x(\tau) $ bukan $ x(t) $ dan $ h(t-\tau) $ bukan $ h(t) $
+\end{frame}
+
+\begin{frame}{Konvolusi Integral}
+	Kita dapatkan:\\
+	\begin{itemize}
+		\item $ x(t) \rightarrow x(\tau) $
+		\item $ h(t) \rightarrow h(\tau) \rightarrow h(-\tau) \rightarrow h(-\tau+t) \rightarrow h(t-\tau)$
+	\end{itemize}
 	
+	\begin{center}
+		\includegraphics[width=0.8\linewidth]{img/img14}
+		\includegraphics[width=0.8\linewidth]{img/img15}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}{Konvolusi Penjumlahan}
+	\textbf{Play convolution integral animation}
+\end{frame}
+
 % TUGAS
 
 \section{Tugas Mandiri dan Terstruktur}
