@@ -1,0 +1,222 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language bahasa
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Tugas Sinyal dan Sistem
+\begin_inset Newline newline
+\end_inset
+
+Transformasi Fourier Waktu Diskrit
+\end_layout
+
+\begin_layout Author
+Mifta Nur Farid
+\end_layout
+
+\begin_layout Standard
+Jawab soal-soal berikut ini dengan baik dan benar secara kelompok.
+\end_layout
+
+\begin_layout Enumerate
+Tentukan hasil Transformasi Fourier dari sequence 
+\begin_inset Formula $x[n]$
+\end_inset
+
+ berikut ini
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(\frac{1}{2}\right){}^{n-1}u[n-1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\frac{1}{2}\right){}^{|n-1|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta[n-1]+\delta[n+1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\delta[n+2]-\delta[n-2]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $u[n-2]-u[n-6]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\frac{1}{2}\right)^{-n}u[-n-1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\frac{1}{3}\right)^{|n|}u[-n-2]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $2^{n}\sin\left(\frac{\pi}{4}n\right)u[-n]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\frac{1}{2}\right)^{|n|}\cos\left(\frac{\pi}{8}(n-1)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sin\left(\frac{\pi}{2}n\right)+\cos\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\sin\left(\frac{5\pi}{3}n\right)+\cos\left(\frac{7\pi}{3}n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x[n-6]$
+\end_inset
+
+ yang mana 
+\begin_inset Formula $x[n]=u[n]-u[n-5]$
+\end_inset
+
+ untuk 
+\begin_inset Formula $0\leq n\leq5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(n-1\right)\left(\frac{1}{3}\right)^{|n|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\frac{\sin(\pi n/5)}{\pi n}\right)\cos\left(\frac{7\pi}{2}n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\series bold
+Catatan:
+\series default
+ Masing-masing anggota kelompok tetap meng-upload jawaban dalam format PDF
+ di LMS.
+\end_layout
+
+\end_body
+\end_document
